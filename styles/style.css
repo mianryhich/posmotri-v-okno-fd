@@ -9,6 +9,7 @@ html {
 }
 
 .page {
+  display: flex;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -16,6 +17,9 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 h1,
@@ -58,13 +62,6 @@ ol {
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: #D9D9D9;
-}
-
-.page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
 }
 
 .content {
@@ -188,9 +185,9 @@ ol {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 700;
-  border: 1px solid #fff;
-  background-color: transparent;
   color: #fff;
+  border: 1px solid currentColor;
+  background-color: transparent;
   line-height: 100%;
   padding: 6px 0;
   outline: none;
@@ -220,13 +217,12 @@ ol {
 
 .more-button {
   width: 100%;
-  margin: 0 3px 2px 2px;
+  margin: 0;
 }
 
 .content__details {
   height: 100%;
   width: 100%;
-  
 }
 
 .title {
@@ -248,18 +244,14 @@ ol {
   flex-direction: column;
   height: 298px;
   overflow-y: auto;
-  overflow-x: hidden;
   gap: 30px;
+  padding: 0 2px 2px;
 }
 
 .content__list {
   display: flex;
   flex-direction: column;
-  gap: 22px;
-}
-
-.content__list-item {
-  padding: 3px;
+  gap: 30px;
 }
 
 .content__card-link {
